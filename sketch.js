@@ -75,3 +75,9 @@ function mouseDragged(){
 function mouseReleased(){
     slingshot.fly();
 }
+
+function keyPressed() { //to attach the bird when space key is pressed
+    if(keyCode === 32) { // 32 is the ASCII Code for space key
+        slingshot.attach(bird.body); // attach the bird to slingShot
+    }
+}
